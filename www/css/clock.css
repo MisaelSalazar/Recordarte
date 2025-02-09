@@ -1,0 +1,14 @@
+.clock{
+    width: 80%;
+    /* padding: 5%; */
+    /* font-size: 1.5rem; */
+    /* border-radius: 2rem; */
+    /* border-color: #673296;
+    background-color: #c3aafe; */
+}
+#hora{
+    font-size: 4rem;
+}
+#fecha{
+    font-size: 1.5rem;
+}

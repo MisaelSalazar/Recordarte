@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel</title>
+
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../css/fontawesome-free-6.7.2-web/css/all.css">
+
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/clock.css">
+    <link rel="stylesheet" href="../css/panel.css">
+
+</head>
+
+<body>
+
+    <script src="../components/header.js"></script>
+
+    <script>
+        header('<a href="inicio.html" class = "text-white"><i class="fa-solid fa-chevron-left"></i></a> Bienvenido');
+    </script>
+
+    <center>
+        <br>
+        <div class="clock" id="clock"></div>
+    </center>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const options = { weekday: 'long', day: '2-digit', month: 'long', year: 'numeric' };
+            const dateStr = now.toLocaleDateString('es-ES', options);
+            const timeStr = now.toLocaleTimeString('es-ES');
+
+            document.getElementById('clock').innerHTML = `<div id = "hora">${timeStr}</div> 
+            <div id = "fecha">${dateStr}</div>`;
+        }
+
+        setInterval(updateClock, 1000); // Actualiza cada segundo
+        updateClock(); // Llamada inicial para que no haya retraso
+    </script>
+
+    <br>
+
+    <center>
+        <a href="juegos.html" class="seccion">
+
+            <div class="row">
+
+                <div class="col col-3">
+                    <i class="fa-solid fa-gamepad"></i>
+                </div>
+                Juegos
+            </div>
+
+        </a>
+
+        <a href="#" class="seccion">
+
+            <div class="row">
+
+                <div class="col col-3">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                Ubicación
+            </div>
+        </a>
+
+        <a href="#" class="seccion">
+
+            <div class="row">
+                <div class="col col-3">
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+                Fotos
+            </div>
+        </a>
+
+        <a href="#" class="seccion">
+
+            <div class="row">
+                <div class="col col-3">
+                    <i class="fa-solid fa-people-roof"></i>
+                </div>
+                Familia
+            </div>
+        </a>
+
+        <a href="#" class="seccion">
+
+            <div class="row">
+                <div class="col col-3">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+                Recordatorio
+            </div>
+        </a>
+
+        <br><br>
+    </center>
+
+</body>
+
+</html>
