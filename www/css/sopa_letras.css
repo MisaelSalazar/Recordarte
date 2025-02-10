@@ -1,0 +1,35 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(10, 30px);
+    gap: 2px;
+    margin: auto;
+    width: 320px;
+}
+.cell {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    border: 1px solid #673296;
+    cursor: pointer;
+    user-select: none;
+}
+.selected {
+    background-color: #673296;
+    color: white;
+}
+.found {
+    background-color: #c3aafe;
+    color: black;
+}
+
+.cardLetras{
+    width: 90%;
+    margin: 5%;
+    border-color: #673296;
+    background-color: #c3aafe;
+    border-radius: 1rem;
+    padding: 1rem;
+}

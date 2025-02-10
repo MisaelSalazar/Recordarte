@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+.puzzle-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    width: 315px;
+    margin: auto;
+    border: 2px solid #673296;
+}
+.piece {
+    width: 100px;
+    height: 100px;
+    background-size: 300px 300px;
+    border: 1px solid #673296;
+    cursor: grab;
+}

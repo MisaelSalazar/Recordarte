@@ -1,0 +1,9 @@
+iframe{
+    width: 90%;
+    height: 35rem;
+    border-radius: 2rem;
+    border-color: #673296;
+    border-style: solid;
+    border-width: 2px;
+    margin: 5%;
+}
